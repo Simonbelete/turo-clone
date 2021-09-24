@@ -1,0 +1,19 @@
+{
+  "name": "turo-clone",
+  "version": "1.0.0",
+  "description": "Full clone of Turo is an American peer-to-peer carsharing web and app",
+  "main": "index.js",
+  "scripts": {
+    "commit": "npx git-cz"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Simonbelete/turo-clone.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Simonbelete/turo-clone/issues"
+  },
+  "homepage": "https://github.com/Simonbelete/turo-clone#readme"
+}
