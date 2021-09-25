@@ -9,8 +9,8 @@ interface BannerProps {
 
 const Banner = ({ children }: BannerProps): ReactElement => {
   return (
-    <div className="w-full text-base text-[#414143] bg-[#f4f4f4]">
-      <div className="flex flex-row justify-center items-center py-3 font-semibold underline">
+    <div className="w-full text-[#414143] bg-[#f4f4f4]">
+      <div className="flex flex-row font-basis-grotesque font-medium text-base justify-center items-center py-3 underline">
         {children}
       </div>
     </div>
