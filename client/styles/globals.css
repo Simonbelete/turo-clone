@@ -1,3 +1,27 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+    font-family: 'RlBasisGrotesque';
+    src: url('../public/fonts/basis_grotesque_regular__20200707.woff2') format('woff2');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'RlBasisGrotesque';
+    src: url('../public/fonts/basis_grotesque_black__20200707.woff2') format('woff2');
+    font-weight: 900;
+}
+
+@font-face {
+    font-family: 'RlBasisGrotesque';
+    src: url('../public/fonts/basis_grotesque_medium__20200707.woff2') format('woff2');
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: 'RlBasisGrotesque';
+    src: url('../public/fonts/basis_grotesque_bold__20200707.woff2') format('woff2');
+    font-weight: 700;
+}
