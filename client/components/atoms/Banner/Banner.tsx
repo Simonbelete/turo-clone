@@ -1,9 +1,18 @@
 import React, { ReactElement } from 'react';
 
-const Banner = ({ children }: { children: ReactElement }): ReactElement => {
+interface BannerProps {
+  /**
+   * Banners Body Element
+   */
+  children: ReactElement | string;
+}
+
+const Banner = ({ children }: BannerProps): ReactElement => {
   return (
-    <div className="w-full py-5 text-sm underline flex items-center justify-center">
-      <div>{children}</div>
+    <div className="w-full text-base text-[#414143] bg-[#f4f4f4]">
+      <div className="flex flex-row justify-center items-center py-3 font-semibold underline">
+        {children}
+      </div>
     </div>
   );
 };
