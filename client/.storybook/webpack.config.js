@@ -1,3 +1,5 @@
+const path = require('path');
+
 module.exports = {
     module: {
       rules: [
@@ -17,4 +19,7 @@ module.exports = {
         },
       ],
     },
-  };
+    resolve: {modules: [
+      path.resolve('../'),
+    ]}
+};
