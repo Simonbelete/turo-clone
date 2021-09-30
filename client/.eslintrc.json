@@ -9,8 +9,7 @@
         "plugin:@typescript-eslint/recommended-requiring-type-checking",
         "airbnb",
         "airbnb-typescript",
-        "prettier",
-        "eslint:recommended"
+        "prettier"
     ],
     "parser": "@typescript-eslint/parser",
     "parserOptions": {
@@ -26,6 +25,9 @@
         "@typescript-eslint"
     ],
     "rules": {
+        "arrow-body-style": "off",
+        "import/no-extraneous-dependencies": "off",
+        "react/jsx-props-no-spreading": "off"
     },
     "ignorePatterns": ".json",
     "settings": {
