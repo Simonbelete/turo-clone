@@ -1,6 +1,5 @@
 import React, { ReactElement } from 'react';
 import Link from 'next/link';
-import Icons from '../../../public/logo-icons.svg';
 
 const Logo = (): ReactElement => {
   return (
