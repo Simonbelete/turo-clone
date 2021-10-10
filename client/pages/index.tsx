@@ -1,8 +1,14 @@
 import React from 'react';
 import type { NextPage } from 'next';
 
+import { CTASlider } from 'components';
+
 const Home: NextPage = () => {
-  return <div>Home page</div>;
+  return (
+    <div>
+      <CTASlider />
+    </div>
+  );
 };
 
 export default Home;

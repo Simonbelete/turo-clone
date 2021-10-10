@@ -15,5 +15,6 @@
   "bugs": {
     "url": "https://github.com/Simonbelete/turo-clone/issues"
   },
-  "homepage": "https://github.com/Simonbelete/turo-clone#readme"
+  "homepage": "https://github.com/Simonbelete/turo-clone#readme",
+  "dependencies": {}
 }

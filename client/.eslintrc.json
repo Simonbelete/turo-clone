@@ -27,7 +27,8 @@
     "rules": {
         "arrow-body-style": "off",
         "import/no-extraneous-dependencies": "off",
-        "react/jsx-props-no-spreading": "off"
+        "react/jsx-props-no-spreading": "off",
+        "react/require-default-props": "off"
     },
     "ignorePatterns": ".json",
     "settings": {

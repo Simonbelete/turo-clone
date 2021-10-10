@@ -25,3 +25,7 @@
     src: url('../public/fonts/basis_grotesque_bold__20200707.woff2') format('woff2');
     font-weight: 700;
 }
+
+html, body {
+    font-family: RlBasisGrotesque;
+}
