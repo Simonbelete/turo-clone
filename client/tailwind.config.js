@@ -8,6 +8,13 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
+      letterSpacing: {
+        'medium': '-0.013rem'
+      },
+      colors: {
+        primary: '#593cfb',
+        black: "#121214"
+      },
       fontFamily: {
         'basis-grotesque': ['RlBasisGrotesque']
       }
@@ -16,5 +23,7 @@ module.exports = {
   variants: {
     extend: {},
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/aspect-ratio'),
+  ],
 }
