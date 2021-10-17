@@ -1,13 +1,22 @@
 import React from 'react';
 import type { NextPage } from 'next';
 
-import { CTASlider } from 'components';
+import { Navbar, CTASlider } from 'components';
+import { COVIDBanner, Hero } from 'containers';
 
 const Home: NextPage = () => {
   return (
-    <div>
-      <CTASlider />
-    </div>
+    <>
+      <header>
+        <COVIDBanner />
+        <Navbar />
+      </header>
+      <main>
+        <Hero />
+        <CTASlider />
+      </main>
+      <footer>f</footer>
+    </>
   );
 };
 

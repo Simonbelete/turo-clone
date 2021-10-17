@@ -2,5 +2,12 @@
 export { default as CTASlider } from './CTASlider';
 export { default as CallToAction } from './CallToAction';
 export { default as Button } from './Button';
+export { default as Logo } from './Logo';
+export { default as LinkWrapper } from './LinkWrapper';
+export { default as PrimaryNav } from './PrimaryNav';
+export { default as Navbar } from './Navbar';
+export { default as Banner } from './Banner';
+export { default as Search } from './Search';
+export { default as Hero } from './Hero';
 
 export default null;

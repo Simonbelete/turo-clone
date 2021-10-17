@@ -1,12 +1,20 @@
 import React, { ReactElement } from 'react';
+import Link from 'next/link';
 
-import LinkWrapper from 'components/LinkWrapper';
+import { Button, LinkWrapper } from 'components';
 
 export interface PrimaryNavProps {
   menus?: ReactElement[];
 }
 
 const MENUS = [
+  <div className="hidden md:flex">
+    <Link href="/list-your-car">
+      <>
+        <Button>Become a host</Button>
+      </>
+    </Link>
+  </div>,
   <LinkWrapper href="login">Login</LinkWrapper>,
   <LinkWrapper href="sign-up">Sign up</LinkWrapper>,
 ];
