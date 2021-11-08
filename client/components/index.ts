@@ -10,5 +10,6 @@ export { default as Banner } from './Banner';
 export { default as Search } from './Search';
 export { default as Hero } from './Hero';
 export { default as Heading } from './Heading';
+export { default as FooterNav } from './FooterNav';
 
 export default null;

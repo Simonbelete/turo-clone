@@ -2,7 +2,7 @@ import React from 'react';
 import type { NextPage } from 'next';
 
 import { Navbar, CTASlider } from 'components';
-import { COVIDBanner, Hero, FindYourDriveHeading } from 'containers';
+import { COVIDBanner, Hero, FindYourDriveHeading, Footer } from 'containers';
 
 const Home: NextPage = () => {
   return (
@@ -22,7 +22,7 @@ const Home: NextPage = () => {
         {/* End of Page Center */}
         <CTASlider />
       </main>
-      <footer>f</footer>
+      <Footer />
     </>
   );
 };
