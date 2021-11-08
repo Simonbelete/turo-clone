@@ -16,7 +16,8 @@ module.exports = {
         black: "#121214"
       },
       fontFamily: {
-        'basis-grotesque': ['RlBasisGrotesque']
+        'basis-grotesque': ['RlBasisGrotesque'],
+        'freight': ['RlFreight']
       }
     },
   },

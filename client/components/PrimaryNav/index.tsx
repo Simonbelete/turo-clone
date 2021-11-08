@@ -21,12 +21,12 @@ const MENUS = [
 
 const PrimaryNav = ({ menus = MENUS }: PrimaryNavProps): ReactElement => {
   return (
-    <div className="inline-flex gap-7">
+    <div className="inline-flex items-center justify-center gap-7">
       {menus &&
         menus.map((_) => (
           <div
             key={_.key}
-            className="text-[#414143] h-full flex items-center justify-center"
+            className="text-[#414143] h-full flex items-center justify-center font-bold text-[13px]"
           >
             {_}
           </div>

@@ -26,6 +26,12 @@
     font-weight: 700;
 }
 
+@font-face {
+    font-family: 'RlFreight';
+    src: url('../public/fonts/freight.woff2') format('woff2');
+    font-weight: 900;
+}
+
 html, body {
     font-family: RlBasisGrotesque;
 }
