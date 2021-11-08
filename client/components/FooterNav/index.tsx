@@ -13,7 +13,6 @@ const FooterNav = ({
     <>
       {/* Mobile */}
       <div className="flex md:hidden flex-col gap-5">
-        <h2 className="text-base">{title}</h2>
         <Disclosure>
           {({ open }) => (
             <>
