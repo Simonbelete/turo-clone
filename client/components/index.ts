@@ -11,5 +11,8 @@ export { default as Search } from './Search';
 export { default as Hero } from './Hero';
 export { default as Heading } from './Heading';
 export { default as FooterNav } from './FooterNav';
+export { default as Input } from './Input';
+export { default as LocationAutoComplete } from './LocationAutoComplete';
+export { default as SearchBar } from './SearchBar';
 
 export default null;

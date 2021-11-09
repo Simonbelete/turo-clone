@@ -1,6 +1,6 @@
 import React, { ReactElement } from 'react';
 
-import { Input } from 'components/atoms';
+import { Input } from 'components';
 
 interface AutocompleteProps {
   label: string;
