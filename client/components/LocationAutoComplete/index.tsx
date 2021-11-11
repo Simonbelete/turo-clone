@@ -1,33 +1,31 @@
 import React, { ReactElement, useState } from 'react';
-import { AutoComplete } from 'antd';
+import { AutoComplete, Input } from 'antd';
 
-const { Option } = AutoComplete;
+import style from './index.module.sass';
 
 const LocationAutoComplete: React.FC = (): ReactElement => {
-  const [result, setResult] = useState<string[]>([]);
+  const [options, setOptions] = useState<{ value: string }[]>([
+    { value: 'a' },
+    { value: 'b' },
+    { value: 'c' },
+  ]);
+
   const handleSearch = (value: string) => {
-    let res: string[] = [];
-    if (!value || value.indexOf('@') >= 0) {
-      res = [];
-    } else {
-      res = ['gmail.com', '163.com', 'qq.com'].map(
-        (domain) => `${value}@${domain}`
-      );
-    }
-    setResult(res);
+    // setOptions(!value ? [] : [{ value }]);
   };
 
   return (
     <AutoComplete
-      style={{ width: 200 }}
-      onSearch={handleSearch}
-      placeholder="input here"
+      options={options}
+      // onSelect={onSelect}
+      // onSearch={handleSearch}
+      bordered={false}
     >
-      {result.map((email: string) => (
-        <Option key={email} value={email}>
-          {email}
-        </Option>
-      ))}
+      <Input
+        placeholder="City, airport, address or hotel"
+        bordered={false}
+        className={`${style.locationautocomplete} w-full md:min-w-[255px]`}
+      />
     </AutoComplete>
   );
 };

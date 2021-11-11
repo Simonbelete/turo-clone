@@ -1,4 +1,5 @@
 module.exports = {
+  important: true,
   mode: 'jit',
    // These paths are just examples, customize them to match your project structure
    purge: [
