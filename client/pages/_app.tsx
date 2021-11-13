@@ -4,6 +4,8 @@ import '../styles/globals.css';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'antd/dist/antd.css';
+import 'react-datepicker/dist/react-datepicker.css';
+import 'react-dates/initialize';
 
 function MyApp({ Component, pageProps }: AppProps) {
   return <Component {...pageProps} />;

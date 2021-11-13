@@ -1,11 +1,18 @@
 import React, { ReactElement } from 'react';
 
-import { SearchBar, LocationAutoComplete } from 'components';
+import {
+  SearchBar,
+  LocationAutoComplete,
+  DateTimeRangePicker,
+} from 'components';
 
 const SearchBarContainer: React.FC = (): ReactElement => {
   return (
     <SearchBar>
-      <LocationAutoComplete />
+      <>
+        <LocationAutoComplete />
+        <DateTimeRangePicker />
+      </>
     </SearchBar>
   );
 };
