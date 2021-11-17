@@ -154,20 +154,22 @@ const DateRangePicker = (): ReactElement => {
       </Popover.Button>
 
       <Popover.Panel className="absolute top-10 -left-7 z-10 p-1 bg-white">
-        <div className="p-5 w-[319px]">
-          <div className="flex flex-row justify-between">
+        <div className="p-5 w-[319px] ">
+          <div className="flex flex-row items-center justify-between">
             <div
-              className="cursor-pointer"
+              className="cursor-pointer bg-[#f4f4f4] h-6 w-6 rounded-full flex items-center justify-center"
               onClick={() => setActiveDate(subMonths(activeDate, 1))}
             >
-              <ChevronLeft size="10" />
+              <ChevronLeft size="12" />
             </div>
-            <h2>{format(activeDate, 'MMMM yyyy')}</h2>
+            <div className="font-basis-grotesque font-bold font-[16px]">
+              {format(activeDate, 'MMMM yyyy')}
+            </div>
             <div
-              className="cursor-pointer"
+              className="cursor-pointer bg-[#f4f4f4] h-6 w-6 rounded-full flex items-center justify-center"
               onClick={() => setActiveDate(addMonths(activeDate, 1))}
             >
-              <ChevronRight size="10" />
+              <ChevronRight size="12" />
             </div>
           </div>
           {getWeekDaysNames()}
