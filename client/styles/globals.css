@@ -33,26 +33,5 @@
 }
 
 html, body {
-    font-family: RlBasisGrotesque;
-}
-
-.nice-dates-navigation, .nice-dates-day {
-    color: red !important;
-}
-
-.nice-dates-popover {
-    /* width: 200px !important; */
-    box-shadow: none;
-    border: 1px solid #ddd;
-    border-radius: 2px;
-    max-width: 480px;
-    transition: none;
-}
-.nice-dates-day {
-    width: calc(100% / 14) !important;
-    height: 30px !important;
-}
-
-.nice-dates-grid {
-    height: auto !important;
+    font-family: RlBasisGrotesque
 }

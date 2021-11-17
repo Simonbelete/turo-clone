@@ -1,13 +1,12 @@
 import React from 'react';
 import type { NextPage } from 'next';
 
-import { Navbar, CTASlider, DateTimeRangePicker } from 'components';
+import { Navbar, CTASlider } from 'components';
 import { COVIDBanner, Hero, FindYourDriveHeading, Footer } from 'containers';
 
 const Home: NextPage = () => {
   return (
     <>
-      <DateTimeRangePicker />
       <header>
         <COVIDBanner />
         <Navbar />

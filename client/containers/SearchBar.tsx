@@ -3,7 +3,8 @@ import React, { ReactElement } from 'react';
 import {
   SearchBar,
   LocationAutoComplete,
-  DateTimeRangePicker,
+  DateRangePicker,
+  TimePicker,
 } from 'components';
 
 const SearchBarContainer: React.FC = (): ReactElement => {
@@ -11,7 +12,8 @@ const SearchBarContainer: React.FC = (): ReactElement => {
     <SearchBar>
       <>
         <LocationAutoComplete />
-        <DateTimeRangePicker />
+        <DateRangePicker />
+        <TimePicker />
       </>
     </SearchBar>
   );
