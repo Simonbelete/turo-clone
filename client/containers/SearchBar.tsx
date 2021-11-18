@@ -11,7 +11,13 @@ const SearchBarContainer: React.FC = (): ReactElement => {
   return (
     <SearchBar>
       <>
-        <LocationAutoComplete />
+        <SearchBar.Field>
+          <>
+            <SearchBar.Label>Where</SearchBar.Label>
+            <LocationAutoComplete />
+          </>
+        </SearchBar.Field>
+        <SearchBar.Separator />
         <DateRangePicker />
         <TimePicker />
       </>

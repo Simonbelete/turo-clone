@@ -2,7 +2,7 @@ import React, { ReactElement } from 'react';
 
 import style from './index.module.sass';
 
-const SearchBar: React.FC<{ children: ReactElement }> = ({
+const SearchBarComponent: React.FC<{ children: ReactElement }> = ({
   children,
 }): ReactElement => {
   return (
@@ -18,5 +18,25 @@ const SearchBar: React.FC<{ children: ReactElement }> = ({
     </div>
   );
 };
+
+const Field: React.FC<{ children: ReactElement }> = ({
+  children,
+}): ReactElement => {
+  return <div className="flex flex-col mt-[4px] px-3">{children}</div>;
+};
+
+const Label: React.FC<{ children: string }> = ({ children }): ReactElement => {
+  return <div className="text-[11px] font-bold">{children}</div>;
+};
+
+const Separator: React.FC = (): ReactElement => {
+  return <div className="border-l h-4/5 mx-5 border-[#c7c7c7]" />;
+};
+
+const SearchBar = Object.assign(SearchBarComponent, {
+  Separator,
+  Field,
+  Label,
+});
 
 export default SearchBar;

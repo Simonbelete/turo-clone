@@ -24,7 +24,7 @@ const LocationAutoComplete: React.FC = (): ReactElement => {
       <Input
         placeholder="City, airport, address or hotel"
         bordered={false}
-        className={`${style.locationautocomplete} w-full md:min-w-[255px]`}
+        className={`${style.locationautocomplete} w-full md:min-w-[255px] px-0`}
       />
     </AutoComplete>
   );
