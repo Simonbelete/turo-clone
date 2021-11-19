@@ -17,5 +17,6 @@ export { default as SearchBar } from './SearchBar';
 export { default as DateTimeRangePicker } from './DateTimeRangePicker';
 export { default as DateRangePicker } from './DateRangePicker';
 export { default as TimePicker } from './TimePicker';
+export { default as SearchButton } from './SearchButton';
 
 export default null;

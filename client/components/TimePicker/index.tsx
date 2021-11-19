@@ -3,6 +3,7 @@ import React, { ReactElement } from 'react';
 const TimePicker: React.FC = (): ReactElement => {
   return (
     <select
+      defaultValue="600"
       onChange={(e: React.ChangeEvent<HTMLSelectElement>) =>
         console.log(e.target.value)
       }
